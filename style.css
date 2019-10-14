@@ -79,15 +79,6 @@ main {
     background-position: center;
 }
 
-/*
-il contenuto del MAIN non viene bloccato
-main:after {
-    content: attr();
-    display: table;
-    clear: both;
-}
-*/
-
 aside:after {
     content: "";
     display: table;
@@ -141,7 +132,16 @@ a:visited {
     width: 30%;
     float: left;
     padding: 15px;
+    overflow: auto;
 }
+
+/*
+aside.right:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+*/
 
 .int-design {
     margin-bottom: 10px;
@@ -151,4 +151,26 @@ a:visited {
 footer {
     background-image: url("https://cdn.pixabay.com/photo/2015/11/29/15/24/texture-1068871_960_720.jpg");
     height: 90px;
+}
+
+footer div {
+    color: #774c20;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+}
+
+hr {
+    background-color: #774c20;
+    height: 2px;
+    border: 0;
+}
+
+span {
+    line-height: 55px;
+    width: 33%;
+    font-size: 40px;
+    color: #774c20;
+    float: left;
 }
